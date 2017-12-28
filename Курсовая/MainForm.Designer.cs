@@ -190,6 +190,7 @@
             this.Matrix.ShowEditingIcon = false;
             this.Matrix.Size = new System.Drawing.Size(428, 314);
             this.Matrix.TabIndex = 0;
+            this.Matrix.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Matrix_CellValueChanged);
             // 
             // label3
             // 
@@ -221,7 +222,8 @@
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label9, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.label4, 0, 3);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(45, 27);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 5;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.42342F));
@@ -229,7 +231,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 68F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(602, 374);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(808, 403);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // ChromaticLabel
@@ -237,7 +239,7 @@
             this.ChromaticLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ChromaticLabel.AutoSize = true;
             this.ChromaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ChromaticLabel.Location = new System.Drawing.Point(292, 328);
+            this.ChromaticLabel.Location = new System.Drawing.Point(395, 357);
             this.ChromaticLabel.Name = "ChromaticLabel";
             this.ChromaticLabel.Size = new System.Drawing.Size(18, 25);
             this.ChromaticLabel.TabIndex = 5;
@@ -247,7 +249,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(220, 0);
+            this.label2.Location = new System.Drawing.Point(323, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(161, 13);
             this.label2.TabIndex = 0;
@@ -268,7 +270,7 @@
             this.tableLayoutPanel4.Controls.Add(this.RadiusLabel, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.CenterLabel, 2, 1);
             this.tableLayoutPanel4.Controls.Add(this.BridgesLabel, 3, 1);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 54);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 60);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -364,7 +366,7 @@
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(212, 217);
+            this.label9.Location = new System.Drawing.Point(315, 246);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(177, 13);
             this.label9.TabIndex = 2;
@@ -374,7 +376,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(223, 285);
+            this.label4.Location = new System.Drawing.Point(326, 314);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(155, 13);
             this.label4.TabIndex = 3;
